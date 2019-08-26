@@ -1,12 +1,12 @@
 #!/bin/sh
 #Download ns-3.27
 
-wget https://www.nsnam.org/releases/ns-allinone-3.27.tar.bz2
+wget https://www.nsnam.org/releases/ns-allinone-3.29.tar.bz2
 tar xvf ns-allinone*
 
 HOME_DIR=$(pwd)
 echo $HOME_DIR
-NS3_HOME=$HOME_DIR/ns-allinone-3.27/ns-3.27
+NS3_HOME=$HOME_DIR/ns-allinone-3.29/ns-3.29
 PATCH_PATH=$HOME_DIR/patches
 
 #cd $NS3_HOME
@@ -29,7 +29,7 @@ mv $NS3_HOME/src/applications/model/packet-sink.h_out $NS3_HOME/src/applications
 
 #Configure and build ns-3
 cd $NS3_HOME
-./waf configure
+./waf configure --enable-examples --enable-tests
 ./waf
 
 #Copy the uav-sim code to ns-3 scratch folder
