@@ -10,7 +10,7 @@ FlyNetSim is a UAV Network Simulator created by combining ns-3 network simulator
       organization={ACM}
   }
 ```
-This code was tested on an Ubuntu 16.04 system. For network simulator, ns-3.27 is used; so the dependent packages need to be installed as mentioned in ns-3 wiki page. For ubuntu/debian platform, the specific packages can be found at: https://www.nsnam.org/wiki/Installation#Ubuntu.2FDebian.2FMint . The basic packages needed are : Python2.7, pip, python-dev, gcc.
+This code was tested on an Ubuntu 16.04 and Ubuntu 18.04 system. For network simulator, ns-3.27 or ns-3.29 is used; so the dependent packages need to be installed as mentioned in ns-3 wiki page. For ubuntu/debian platform, the specific packages can be found at: https://www.nsnam.org/wiki/Installation#Ubuntu.2FDebian.2FMint . The basic packages needed are : Python2.7, pip, python-dev, gcc.
 
 ### Installation
 
@@ -37,6 +37,9 @@ If you get error for versions, install the latest available version.
   $ ./fly_init.sh
 ```
 5. Install PyQt4 for GUI.
+```
+  sudo apt-get install python-qt4
+```
 
 ### Run Simulation
 
