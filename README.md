@@ -16,8 +16,9 @@ This code was tested on an Ubuntu 16.04 and Ubuntu 18.04 system. For network sim
 
 1. Additional Dependencies for FlyNetSim:   
 Install latest version of czmq, libzmq, libczmq and libxml
+
+~~sudo apt-get install libzmq5 libzmq-dev libczmq4 libczmq-dev czmq libxml2 libxml2-dev~~
 ```
-   ~~sudo apt-get install libzmq5 libzmq-dev libczmq4 libczmq-dev czmq libxml2 libxml2-dev~~
    sudo apt-get install libzmq5 libzmq3-dev libczmq-dev libczmq4 libxml2 libxml2.dev
 ```
 If you get error for versions, install the latest available version.
@@ -67,7 +68,7 @@ For Multiple UAVs as of now, a simple positioning system with linear layout is u
 
 ### Fix for Possible Errors
 
-1. While building ns-3, if you get an error for "syslog.h" in  "include/czmq_prelude.h", comment out the line in "include/czmq_prelude.h" from the include path.
+1. While building ns-3, if you get an error for "syslog.h" in  "include/czmq_prelude.h", comment out the line in "include/czmq_prelude.h" from the include path (/usr/local/include/czmq_prelude.h or /usr/include//czmq_prelude.h ) .
 ```
   //#include <syslog.h>
 ```
