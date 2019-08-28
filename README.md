@@ -19,7 +19,7 @@ Install latest version of czmq, libzmq, libczmq and libxml
 
 ~~sudo apt-get install libzmq5 libzmq-dev libczmq4 libczmq-dev czmq libxml2 libxml2-dev~~
 ```
-   sudo apt-get install libzmq5 libzmq3-dev libczmq-dev libczmq4 libxml2 libxml2.dev
+   sudo apt-get install libzmq5 libzmq3-dev libczmq-dev libczmq4 libxml2 libxml2-dev
 ```
 If you get error for versions, install the latest available version.
 
@@ -27,7 +27,7 @@ If you get error for versions, install the latest available version.
 ```
   git clone https://github.com/saburhb/FlyNetSim.git
 ```
-3. Go to the NetSim folder and run the initial script which downloads ns-3.27, applies patches, configures and builds. This script needs to be executed only once and it may take a while to finish.
+3. Go to the NetSim folder and run the initial script which downloads ns-3.29, applies patches, configures and builds. This script needs to be executed only once and it may take a while to finish.
 ```
   $ cd FlyNetSim/NetSim
   $ ./net_init.sh
@@ -68,7 +68,7 @@ For Multiple UAVs as of now, a simple positioning system with linear layout is u
 
 ### Fix for Possible Errors
 
-1. While building ns-3, if you get an error for "syslog.h" in  "include/czmq_prelude.h", comment out the line in "include/czmq_prelude.h" from the include path (/usr/local/include/czmq_prelude.h or /usr/include//czmq_prelude.h ) .
+1. While building ns-3, if you get an error for "syslog.h" in  "include/czmq_prelude.h", comment out the line in "include/czmq_prelude.h" from the include path (/usr/local/include/czmq_prelude.h or /usr/include/czmq_prelude.h ) .
 ```
   //#include <syslog.h>
 ```
